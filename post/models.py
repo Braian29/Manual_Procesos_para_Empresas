@@ -4,7 +4,6 @@ from django.contrib.auth.models import User
 from ckeditor.fields import RichTextField
 
 class Post(models.Model):
-
     titulo         = models.CharField(max_length=255)
     subtitulo      = models.CharField(max_length=255)
     contenido      = RichTextField(null=True)
